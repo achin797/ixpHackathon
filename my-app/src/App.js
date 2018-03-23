@@ -6,7 +6,7 @@ import SearchBar from './components/SearchBar.js'
 import './App.css';
 //var data = require('json!./mock.json');
 
-const KEYS_TO_FILTERS = ['name'];
+const KEYS_TO_FILTERS = ['name', 'team'];
 
 class App extends Component {
   constructor (props) {
@@ -23,15 +23,17 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to Egypt</h1>
+          <h1 className="App-title">Welcome to SAP</h1>
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
 
         <SearchInput className="search-input" onChange={this.searchUpdated} />
-        {filteredData.map(x => <li>{x.name}</li>)}
-        <PopupItem title="Some Information" info={data[0].moreInfo} />
+        <ul>
+          {filteredData.map(x => <li>{x.name}</li>)}
+        </ul>
+        <PopupItem title="Some Information" info={data[0].moreInfo.location} />
 
 
 
