@@ -1,0 +1,56 @@
+
+  {
+    "iNum": "I238110",
+    "name": "Shirley Chen",
+    "team": "FPA-974",
+    "orgParent": "Debra Waller",
+    "orgChildren": [
+      {
+        "name": "Carmella Allison"
+      },
+      {
+        "name": "Holman Mccarty"
+      },
+      {
+        "name": "Sanford Dennis"
+      },
+      {
+        "name": "Merle Sampson"
+      },
+      {
+        "name": "Baird Sims"
+      }
+    ],
+    "picture": "http://placehold.it/32x32",
+    "moreInfo": {
+      "contact": {
+        "email": "bairdsims@trasola.com",
+        "slack": "@Penny",
+        "officePhone": "+1 (833) 559-3948",
+        "mobilPhone": "+1 (956) 482-3451"
+      },
+      "Location": {
+        "deskNumber": 17,
+        "office": "Newry, Jordan",
+        "map": "http://placehold.it/32x32"
+      },
+      "Fetures": {
+        "CurrentlyWorking": "Back-End",
+        "PreviouseWork": [
+          {
+            "Task": "Automation"
+          },
+          {
+            "Task": "UI"
+          },
+          {
+            "Task": "Development"
+          }
+        ]
+      },
+      "localTime": "Vancouver",
+      "basicInfo": {
+        "about": "Officia minim est minim irure irure commodo excepteur laborum veniam qui labore mollit labore cupidatat. In aliquip ut irure dolor irure mollit ex consequat dolore aute dolore dolore tempor anim. Incididunt esse velit est excepteur irure nulla et aliquip excepteur duis occaecat nostrud laborum.\r\n"
+      }
+    }
+  }
