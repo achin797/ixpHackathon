@@ -1,0 +1,27 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 50px;
+}
+
+.profileDialog {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.profileDialog .header .closeBtn {
+    width: 50px;
+}
+
+.profilePicture {
+    /*animation: App-logo-spin infinite 20s linear;*/
+    height: 80px;
+}
