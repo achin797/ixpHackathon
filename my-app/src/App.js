@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import SearchInput, {createFilter} from 'react-search-input'
-import logo from './logo.svg';
+import logo from './logo.png';
 import data from './people.js';
 import './App.css';
 //var data = require('json!./mock.json');
 
-const KEYS_TO_FILTERS = ['name', 'team'];
+const KEYS_TO_FILTERS = ['name', 'team', 'moreInfo.features.currentlyWorking.task', 'moreInfo.features.previouseWork.task'];
 
 class App extends Component {
   constructor (props) {
@@ -22,19 +22,13 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to SAP</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
 
-        <SearchInput className="search-input" onChange={this.searchUpdated} />
+        <SearchInput className="Search-input" onChange={this.searchUpdated} />
         <ul>
           {filteredData.map(x => <li>{x.name}</li>)}
         </ul>
         <PopupItem title="Some Information" info={data[0].moreInfo} />
-
-
 
       </div>
     );
