@@ -26,7 +26,7 @@ class App extends Component {
 
         <SearchInput className="Search-input" onChange={this.searchUpdated} />
         <ul>
-          {filteredData.map(x => <li>{x.name}</li>)}
+          {filteredData.map(x => <li className="Names"><a href="#">{x.name}</a></li>)}
         </ul>
 
 
