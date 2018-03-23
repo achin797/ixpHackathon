@@ -5,13 +5,16 @@ import React from 'react';
 
 class ProfileDialogTitleArea extends React.Component {
     render() {
+        console.log(this.props.profilePicture)
 
         return (
             <div className="titleArea">
 
-                <img src={this.props.profilePicture} className="profilePicture"/>
+                <div className="profilePictureContainer">
+                    <img src={this.props.profilePicture} className="profilePicture"/>
+                </div>
 
-                <label className="nameLabel">{this.props.personName}</label>
+                <h1 className="personName">{this.props.personName}</h1>
 
             </div>
         );

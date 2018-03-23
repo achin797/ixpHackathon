@@ -11,8 +11,8 @@ class ProfileDialogContentItem extends React.Component {
 
     makeContent() {
         return Object.keys(this.props.content).map((key) =>{
-            return (<div className="row" key={key}>{key}>
-                <label className="key">{key}</label>
+            return (<div className="row" key={key}>
+                <label className="key">{key}: </label>
                 <label className="info">{this.props.content[key].toString()}</label>
             </div>);
         })
@@ -23,7 +23,9 @@ class ProfileDialogContentItem extends React.Component {
 
         return (
             <div className="profileDialogContentItem">
-                <label className="title">{this.props.title}</label>
+                <div className="titleContainer">
+                    <label className="title">{this.props.title}</label>
+                </div>
                 {this.makeContent()}
 
             </div>

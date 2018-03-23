@@ -1,0 +1,338 @@
+{
+  "Guilherme Lameira de Almeida":{
+    "name": "Guilherme Lameira de Almeida",
+    "team": "FPA-15 Data Acquisition",
+    "orgParent":["Washington Mccormick"],
+    "orgChildren": [],
+    "picture": "https://scontent-sea1-1.xx.fbcdn.net/v/t31.0-8/13923636_1272457359464951_6186927010831121827_o.jpg?_nc_cat=0&oh=9a2a7bb28f0810adfb9016f132ac29bb&oe=5B34D750",
+    "moreInfo": {
+      "Basic Information": {
+        "iNumber": "I864150",
+        "Position": "Agile Developer Intern",
+        "Birthday": "15/09/1997"
+      },
+      "Contact": {
+        "Email": "guilherme.lameira.de.almeida@sap.com",
+        "Slack": "@Guilherme",
+        "Office Phone": "+1 (804) 598-2331",
+        "Mobil Phone": "+1 (778) 681-1509"
+      },
+      "Features": {
+        "Current Work": "Ariba",
+        "Previous Work": "Multi Select on DST, DST for Public Dimensions"
+      },
+      "Location": {
+        "Desk Number": "347",
+        "Office": "Vancouver, Canada"
+      }
+    }
+  },
+  "Ting Wu":{
+    "name": "Ting Wu",
+    "team": "FPA-15 Data Acquisition",
+    "orgParent":["Washington Mccormick"],
+    "orgChildren": [],
+    "picture": "https://images-na.ssl-images-amazon.com/images/I/91j4RxZvJxL._SL1500_.jpg",
+    "moreInfo": {
+      "Basic Information": {
+        "iNumber": "I888530",
+        "Position": "Agile Developer",
+        "Birthday": "25/08/1970"
+      },
+      "Contact": {
+        "Email": "ting@sap.com",
+        "Slack": "@Ting",
+        "Office Phone": "+1 (946) 568-2125",
+        "Mobil Phone": "+1 (853) 415-3532"
+      },
+      "Features": {
+        "Current Work": "Orca with Zizou",
+        "Previous Work": "Orca without Zizou, Connections Page on Orca"
+      },
+      "Location": {
+        "Desk Number": "311",
+        "Office": "Vancouver, Canada"
+      }
+    }
+  },
+  "Joyce Gregory":{
+    "name": "Joyce Gregory",
+    "team": "FPA-40 Predictive",
+    "orgParent":["Joyce Gregory"],
+    "orgChildren": [],
+    "picture": "https://media.licdn.com/dms/image/C4D03AQEs0vfX7A5QjA/profile-displayphoto-shrink_200_200/0?e=1525114800&v=alpha&t=t3uoruFMo6BqR5Y1lM57Hf9UcCR5lomfJderPOXTMi4",
+    "moreInfo": {
+      "Basic Information": {
+        "iNumber": "I887777",
+        "Position": "ORCA Manager",
+        "Birthday": "25/08/1970"
+      },
+      "Contact": {
+        "Email": "mail@sap.com",
+        "Slack": "@Joyce",
+        "Office Phone": "+1 (778) 568-2125",
+        "Mobil Phone": "+1 (251) 415-3532"
+      },
+      "Features": {
+        "Current Work": "Predictive Back-End",
+        "Previous Work": "Predictive Front-End"
+      },
+      "Location": {
+        "Desk Number": "031",
+        "Office": "Vancouver, Canada"
+      }
+    }
+  },
+  "Denise Beard":{
+    "name": "Denise Beard",
+    "team": "FPA-39 BQ",
+    "orgParent":["Santa Ono"],
+    "orgChildren": [],
+    "picture": "https://d2ciprw05cjhos.cloudfront.net/files/v3/styles/gs_large/public/images/16/06/santa_j._ono.jpg?itok=ow-b-UOc",
+    "moreInfo": {
+      "Basic Information": {
+        "iNumber": "I833333",
+        "Position": "QA developer",
+        "Birthday": "25/08/1959"
+      },
+      "Contact": {
+        "Email": "denise@sap.com",
+        "Slack": "@Denise",
+        "Office Phone": "+1 (778) 123-2125",
+        "Mobil Phone": "+1 (848) 456-3532"
+      },
+      "Features": {
+        "Current Work": "QA for Orca",
+        "Previous Work": "QA for HANA"
+      },
+      "Location": {
+        "Desk Number": "001",
+        "Office": "Vancouver, Canada"
+      }
+    }
+  },
+  "Karen Osborne":{
+    "name": "Karen Osborne",
+    "team": "FPA-01 Office of the CEO",
+    "orgParent":["Bill McDermott"],
+    "orgChildren": [],
+    "picture": "data:image/jpeg;base64,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",
+    "moreInfo": {
+      "Basic Information": {
+        "iNumber": "I811111",
+        "Position": "Hana Manager",
+        "Birthday": "25/08/1980"
+      },
+      "Contact": {
+        "Email": "karen@sap.com",
+        "Slack": "@Karen",
+        "Office Phone": "+1 (778) 555-2125",
+        "Mobil Phone": "+1 (848) 123-3532"
+      },
+      "Features": {
+        "Current Work": "Manager for HANA studio",
+        "Previous Work": "Manager for Orca"
+      },
+      "Location": {
+        "Desk Number": "002",
+        "Office": "Vancouver, Canada"
+      }
+    }
+  },
+  "Margie Travis":{
+    "name": "Margie Travis",
+    "team": "FPA-437 HANA studio",
+    "orgParent":["Karen Osborne"],
+    "orgChildren": [],
+    "picture": "http://www.mtolivepreschool.net/wp-content/uploads/2017/12/Margie-Travis.jpg",
+    "moreInfo": {
+      "Basic Information": {
+        "iNumber": "I598276",
+        "Position": "Agile Developer",
+        "Birthday": "25/08/1971"
+      },
+      "Contact": {
+        "Email": "margie@sap.com",
+        "Slack": "@Margie",
+        "Office Phone": "+1 (778) 228-2125",
+        "Mobil Phone": "+1 (848) 323-3532"
+      },
+      "Features": {
+        "Current Work": "Front-End for Hana studio",
+        "Previous Work": "Back-End for HANA studio"
+      },
+      "Location": {
+        "Desk Number": "003",
+        "Office": "Waldorf, Germany"
+      }
+    }
+  },
+  "Kara Guy":{
+    "name": "Kara Guy",
+    "team": "FPA-437 HANA studio",
+    "orgParent":["Karen Osborne"],
+    "orgChildren": [],
+    "picture": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/5/000/26f/3ac/3b6d6cb.jpg",
+    "moreInfo": {
+      "Basic Information": {
+        "iNumber": "I604333",
+        "Position": "Agile Developer",
+        "Birthday": "25/06/1971"
+      },
+      "Contact": {
+        "Email": "kara@sap.com",
+        "Slack": "@Kara",
+        "Office Phone": "+1 (778) 237-2125",
+        "Mobil Phone": "+1 (848) 313-3532"
+      },
+      "Features": {
+        "Current Work": "Back-End for Hana studio",
+        "Previous Work": "Front-End for HANA studio"
+      },
+      "Location": {
+        "Desk Number": "004",
+        "Office": "Waldorf, Germany"
+      }
+    }
+  },
+  "Robyn Phillips":{
+    "name": "Robyn Phillips",
+    "team": "FPA-437 HANA studio",
+    "orgParent":["Karen Osborne"],
+    "orgChildren": [],
+    "picture": "http://internetretailing.net/files/2014/02/Close-up-Happy_smaller.jpg",
+    "moreInfo": {
+      "Basic Information": {
+        "iNumber": "I529535",
+        "Position": "QA Test Developer",
+        "Birthday": "25/06/1973"
+      },
+      "Contact": {
+        "Email": "robyn@sap.com",
+        "Slack": "@Robyn",
+        "Office Phone": "+1 (911) 571-2206",
+        "Mobil Phone": "+1 (844) 516-2261"
+      },
+      "Features": {
+        "Current Work": "Testing for Hana Studio",
+        "Previous Work": "Testing for SAP Leonardo"
+      },
+      "Location": {
+        "Desk Number": "005",
+        "Office": "Waldorf, Germany"
+      }
+    }
+  },
+  "Corina Romero":{
+    "name": "Corina Romero",
+    "team": "FPA-437 HANA studio",
+    "orgParent":["Karen Osborne"],
+    "orgChildren": [],
+    "picture": "https://pbs.twimg.com/profile_images/505442008086114304/-zB7yH-F_400x400.jpeg",
+    "moreInfo": {
+      "Basic Information": {
+        "iNumber": "I805573",
+        "Position": "QA Test Developer",
+        "Birthday": "20/04/1973"
+      },
+      "Contact": {
+        "Email": "corina@sap.com",
+        "Slack": "@Corina",
+        "Office Phone": "+1 (973) 514-2115",
+        "Mobil Phone": "+1 (911) 420-2814"
+      },
+      "Features": {
+        "Current Work": "Testing for Hana Studio",
+        "Previous Work": "Testing for SAP Leonardo"
+      },
+      "Location": {
+        "Desk Number": "006",
+        "Office": "Waldorf, Germany"
+      }
+    }
+  },
+  "Parsons Sandoval":{
+    "name": "Parsons Sandoval",
+    "team": "FPA-723 SAP Leonardo",
+    "orgParent":["Joyce Gregory"],
+    "orgChildren": [],
+    "picture": "https://lh4.googleusercontent.com/-4fKU3wTSn6U/AAAAAAAAAAI/AAAAAAAAADE/TImJJiuVmzQ/photo.jpg",
+    "moreInfo": {
+      "Basic Information": {
+        "iNumber": "I805573",
+        "Position": "Machine Learning Engineer",
+        "Birthday": "20/04/1973"
+      },
+      "Contact": {
+        "Email": "parsons@sap.com",
+        "Slack": "@Parsons",
+        "Office Phone": "+1 (908) 452-2043",
+        "Mobil Phone": "+1 (800) 492-2698"
+      },
+      "Features": {
+        "Current Work": "Developer for SAP Leonardo",
+        "Previous Work": "Developer for Orca"
+      },
+      "Location": {
+        "Desk Number": "041",
+        "Office": "Vancouver, Canada"
+      }
+    }
+  },
+  "Parsons Sandoval":{
+    "name": "Parsons Sandoval",
+    "team": "FPA-723 SAP Leonardo",
+    "orgParent":["Joyce Gregory"],
+    "orgChildren": [],
+    "picture": "https://lh4.googleusercontent.com/-4fKU3wTSn6U/AAAAAAAAAAI/AAAAAAAAADE/TImJJiuVmzQ/photo.jpg",
+    "moreInfo": {
+      "Basic Information": {
+        "iNumber": "I686623",
+        "Position": "Machine Learning Engineer",
+        "Birthday": "20/04/1973"
+      },
+      "Contact": {
+        "Email": "parsons@sap.com",
+        "Slack": "@Parsons",
+        "Office Phone": "+1 (908) 452-2043",
+        "Mobil Phone": "+1 (800) 492-2698"
+      },
+      "Features": {
+        "Current Work": "Developer for SAP Leonardo",
+        "Previous Work": "Developer for Orca"
+      },
+      "Location": {
+        "Desk Number": "041",
+        "Office": "Vancouver, Canada"
+      }
+    }
+  },
+  "Jodie Gould":{
+    "name": "Jodie Gould",
+    "team": "FPA-723 SAP Leonardo",
+    "orgParent":["Parsons Sandoval"],
+    "orgChildren": [],
+    "picture": "https://www.eldersinsurance.com.au/uploads/Agent%20pictures/Geraldton/Jody%20Gould%20cropped.jpg?width=368&height=278&crop=1",
+    "moreInfo": {
+      "Basic Information": {
+        "iNumber": "I968855",
+        "Position": "Machine Learning Engineer Intern",
+        "Birthday": "20/02/1973"
+      },
+      "Contact": {
+        "Email": "jodie@sap.com",
+        "Slack": "@Jodie",
+        "Office Phone": "+1 (112) 452-2043",
+        "Mobil Phone": "+1 (811) 492-2698"
+      },
+      "Features": {
+        "Current Work": "Developer for SAP Leonardo",
+        "Previous Work": "Regression Testing for Leonardo"
+      },
+      "Location": {
+        "Desk Number": "042",
+        "Office": "Vancouver, Canada"
+      }
+    }
+  }
+}

@@ -6,7 +6,6 @@ import React from 'react';
 import './style/ProfileDialog.css';
 import ProfileDialogTitleArea from './ProfileDialogTitleArea';
 import ProfileDialogContentArea from './ProfileDialogContentArea';
-import logo from '../logo.svg';
 
 
 class ProfileDialog extends React.Component {
@@ -25,7 +24,7 @@ class ProfileDialog extends React.Component {
                         </button>
                     </div>
 
-                    <ProfileDialogTitleArea profilePicture={logo} personName={this.props.personInfo.name}>
+                    <ProfileDialogTitleArea profilePicture={this.props.personInfo.picture} personName={this.props.personInfo.name}>
 
                     </ProfileDialogTitleArea>
 
@@ -33,7 +32,6 @@ class ProfileDialog extends React.Component {
 
                     </ProfileDialogContentArea>
 
-                    {/*{this.props.children}*/}
 
                 </div>
             </div>

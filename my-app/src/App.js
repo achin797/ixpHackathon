@@ -1,87 +1,82 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import SearchInput, {createFilter} from 'react-search-input'
-import logo from './logo.png';
-import data from './people.js';
-import './App.css';
-//var data = require('json!./mock.json');
+import data from './resources/People.json';
+import ProfileDialog from './components/ProfileDialog';
+import PeopleList from './components/PeopleList';
+import './components/style/App.css';
+import TreeSketch from './resources/IMG_1263.jpg';
+import SAPeople from './resources/SAPeople.png';
 
-const KEYS_TO_FILTERS = ['name', 'team', 'moreInfo.features.currentlyWorking.task', 'moreInfo.features.previouseWork.task'];
+
+const KEYS_TO_FILTERS = ['name', 'team', 'moreInfo.Features.Current Work'];
 
 class App extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      searchTerm: ''
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            isOpen: false,
+            isDialogOpen: false,
+            selectedPersonInfo: this.personInfo,
+            filteredData: data
+        };
+
+        this.searchUpdated = this.searchUpdated.bind(this)
     }
-    this.searchUpdated = this.searchUpdated.bind(this)
-  }
-  render() {
-    const filteredData = data.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS))
 
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
+    openProfileDialog = (name) => {
+        const selectedPersonInfo = data[name];
+        this.setState({
+            isOpen: true,
+            isDialogOpen: true,
+            selectedPersonInfo: selectedPersonInfo
+        });
 
-        <SearchInput className="Search-input" onChange={this.searchUpdated} />
-        <ul>
-          {filteredData.map(x => <li className="Names"><a href="#">{x.name}</a></li>)}
-        </ul>
+    }
+
+    closeProfileDialog = () => {
+        this.setState({
+            isOpen: false,
+            isDialogOpen: false,
+            selectedPersonInfo: undefined
+        });
+    }
+
+    searchUpdated(term) {
+        this.setState({
+            filteredData: Object.keys(data).map(key => data[key]).filter(createFilter(term, KEYS_TO_FILTERS)),
+        })
+
+    }
+
+    render() {
+        return (
+            <div className="App">
+                <link rel="stylesheet"
+                      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+                <div className="appHeader">
+                    <img className="sapeople" src={SAPeople} />
+                    }
+                    <label className="appTitle">Team Orca</label>
+                </div>
+
+                <ProfileDialog show={this.state.isDialogOpen} onClose={this.closeProfileDialog}
+                               personInfo={this.state.selectedPersonInfo}/>
+
+                <img className="treeSketch" src={TreeSketch}/>
+
+                <SearchInput className="searchInput" onChange={this.searchUpdated}/>
+                <PeopleList peopleData={this.state.filteredData} openProfileDialog={this.openProfileDialog}/>
 
 
-
-        <PopupItem title="Some Information" info={data[0].moreInfo} />
-
-      </div>
+            </div>
     );
-  }
-
-  searchUpdated (term) {
-    this.setState({searchTerm: term})
-  }
-}
-
-function PopupItem(props) {
-  console.log(props.info);
-  var fields = "";
-  var userInfo = "";
-  var searchResults = recursiveJSONSearch(fields,userInfo,props.info);
-  fields = searchResults[0];
-  userInfo = searchResults[1];
-  console.log(fields);
-  console.log(userInfo);
-  return (
-    <div className="User-information">
-      <div className="User-info-header">{props.title}</div>
-      <hr></hr>
-      <div className="User-info-left">
-        {fields}
-      </div>
-      <div className="User-info-right">
-        {userInfo}
-      </div>
-    </div>
-    )
-}
-
-function recursiveJSONSearch(fields,userInfo,items){
-  //console.log("ITEMS"+JSON.stringify(items));
-  for(var key in items){
-    console.log(key + " - " + typeof key);
-    console.log(items[key] + " - " + typeof items[key]);
-    fields += key+'\n';
-    if (typeof items[key] === 'object'){
-      userInfo += '-\n';
-      var searchResults = recursiveJSONSearch(fields,userInfo,items[key]);
-      fields = searchResults[0];
-      userInfo = searchResults[1];
-    } else {
-      userInfo += items[key]+'\n';
+    }
     }
 
-  }
-  return [fields, userInfo];
-}
+    export default App;
 
-export default App;
+
+

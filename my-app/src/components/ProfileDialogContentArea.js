@@ -3,6 +3,8 @@
  */
 import React from 'react';
 import ProfileDialogContentItem from './ProfileDialogContentItem';
+import Map from "../resources/Map.png"
+
 
 
 class ProfileDialogContentArea extends React.Component {
@@ -18,8 +20,12 @@ class ProfileDialogContentArea extends React.Component {
 
         return (
             <div className="profileDialogContentArea">
+                <div key="map">
+                    <img className="map" src={Map}/>
+                </div>
                 {this.makeContent()}
             </div>
+
         );
     }
 }
