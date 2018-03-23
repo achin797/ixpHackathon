@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import SearchInput, {createFilter} from 'react-search-input'
 import logo from './logo.svg';
 import data from './people.js';
-import SearchBar from './components/SearchBar.js'
 import './App.css';
 //var data = require('json!./mock.json');
 
