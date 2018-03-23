@@ -22,6 +22,32 @@
   font-size: large;
 }
 
+.User-information {
+    width: 300px;
+    border: 5px solid black;
+    padding: 25px;
+    margin: 25px;
+    clear: left;
+}
+
+.User-info-header {
+    font-style: italic;
+}
+
+.User-info-left {
+    white-space: pre-line;
+    width: 50%;
+    font-weight: bold;
+    text-align: left;
+    float: left;
+}
+
+.User-info-right {
+    white-space: pre-line;
+    width: 50%;
+    float: right;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
