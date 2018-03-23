@@ -31,7 +31,7 @@ class App extends Component {
 
         <SearchInput className="search-input" onChange={this.searchUpdated} />
         {filteredData.map(x => <li>{x.name}</li>)}
-        <PopupItem title="Some Information" info={data[0].moreInfo.location} />
+        <PopupItem title="Some Information" info={data[0].moreInfo} />
 
 
 
@@ -46,14 +46,9 @@ class App extends Component {
 
 function PopupItem(props) {
   console.log(props.info);
-  var fields = "";
-  var userInfo = "";
-  for(var key in props.info){
-    fields += key+'\n';
-    userInfo += props.info[key]+'\n';
-  };
-  fields.split('\n');
-  userInfo.split('\n');
+  var searchResults = recursiveJSONSearch(fields,userInfo,props.info);
+  var fields = searchResults[0];
+  var userInfo = searchResults[1];
   console.log(fields);
   console.log(userInfo);
   return (
@@ -67,9 +62,25 @@ function PopupItem(props) {
         {userInfo}
       </div>
     </div>
-
     )
 }
 
+function recursiveJSONSearch(fields,userInfo,items){
+  console.log("ITEMS"+JSON.stringify(items));
+  for(var key in items){
+    console.log(key);
+    fields += key+'\n';
+    if (typeof items[key] != 'string'){
+      userInfo += '-\n';
+      var searchResults = recursiveJSONSearch(fields,userInfo,items[key]);
+      fields = searchResults[0];
+      userInfo = searchResults[1];
+    } else {
+      userInfo += items[key]+'\n';
+    }
+
+  }
+  return [fields, userInfo];
+}
 
 export default App;
