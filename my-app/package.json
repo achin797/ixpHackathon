@@ -5,7 +5,10 @@
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.1"
+    "react-place": "^0.6.2",
+    "react-scripts": "1.1.1",
+    "react-search-filter": "0.0.5",
+    "react-search-input": "^0.11.3"
   },
   "scripts": {
     "start": "react-scripts start",
