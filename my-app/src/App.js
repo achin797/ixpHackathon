@@ -33,8 +33,7 @@ class App extends Component {
         <ul>
           {filteredData.map(x => <li>{x.name}</li>)}
         </ul>
-        <PopupItem title="Some Information" info={data[0].moreInfo.location} />
-
+        <PopupItem title="Some Information" info={data[0].moreInfo} />
 
 
       </div>
