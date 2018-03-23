@@ -27,7 +27,7 @@
     border: 5px solid black;
     padding: 25px;
     margin: 25px;
-    clear: left;
+    overflow-y: hidden;
 }
 
 .User-info-header {

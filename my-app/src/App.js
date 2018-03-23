@@ -28,10 +28,10 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        
+
         <SearchInput className="search-input" onChange={this.searchUpdated} />
         {filteredData.map(x => <li>{x.name}</li>)}
-        {/*<PopupItem title="Some Information" info={data.moreInfo.Location} />*/}
+        <PopupItem title="Some Information" info={data[0].moreInfo.location} />
 
 
 
