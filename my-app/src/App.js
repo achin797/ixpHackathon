@@ -16,9 +16,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         
-        <SearchBar 
-          onUserInput={SearchBar.handleUserInput}
-        />
+        <SearchBar/>
 
         <ul>
           {Data.map(x => <li>{x.name}</li>)}
