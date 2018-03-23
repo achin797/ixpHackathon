@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import SearchInput, {createFilter} from 'react-search-input'
 import logo from './logo.svg';
 import data from './people.js';
+import SearchBar from './components/SearchBar.js'
 import './App.css';
+//var data = require('json!./mock.json');
 
 const KEYS_TO_FILTERS = ['name'];
 
@@ -16,6 +18,7 @@ class App extends Component {
   }
   render() {
     const filteredData = data.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS))
+
     return (
       <div className="App">
         <header className="App-header">
@@ -28,6 +31,10 @@ class App extends Component {
         
         <SearchInput className="search-input" onChange={this.searchUpdated} />
         {filteredData.map(x => <li>{x.name}</li>)}
+        {/*<PopupItem title="Some Information" info={data.moreInfo.Location} />*/}
+
+
+
       </div>
     );
   }
@@ -36,4 +43,33 @@ class App extends Component {
     this.setState({searchTerm: term})
   }
 }
+
+function PopupItem(props) {
+  console.log(props.info);
+  var fields = "";
+  var userInfo = "";
+  for(var key in props.info){
+    fields += key+'\n';
+    userInfo += props.info[key]+'\n';
+  };
+  fields.split('\n');
+  userInfo.split('\n');
+  console.log(fields);
+  console.log(userInfo);
+  return (
+    <div className="User-information">
+      <div className="User-info-header">{props.title}</div>
+      <hr></hr>
+      <div className="User-info-left">
+        {fields}
+      </div>
+      <div className="User-info-right">
+        {userInfo}
+      </div>
+    </div>
+
+    )
+}
+
+
 export default App;
