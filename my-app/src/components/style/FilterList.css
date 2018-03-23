@@ -1,0 +1,29 @@
+.searchInput {
+  margin-left: 100px;
+  width: 350px;
+}
+.searchInput input {
+  width: 350px;
+  height: 50px;
+  padding: 0px 25px;
+  border: solid 1px #eee;
+  font-size: 14px;
+}
+.peopleList {
+  margin-left: 100px;
+  list-style-type: none;
+  width: 350px;
+}
+.peopleList .peopleListItem {
+  width: 350px;
+  box-sizing: border-box;
+  padding: 15px 25px;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-weight: normal;
+  boxing-size: borderBox;
+  background-color: #f3f3f3;
+}
+.peopleList .peopleListItem:hover {
+  background-color: #a7a7a7;
+}
