@@ -6,7 +6,7 @@ import SearchBar from './components/SearchBar.js'
 import './App.css';
 //var data = require('json!./mock.json');
 
-const KEYS_TO_FILTERS = ['name'];
+const KEYS_TO_FILTERS = ['name', 'team'];
 
 class App extends Component {
   constructor (props) {
