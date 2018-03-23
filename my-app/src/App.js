@@ -21,7 +21,7 @@ class App extends Component {
         />
 
         <ul>
-          {Data.map(x => <li>{x.name.first} {x.name.last}</li>)}
+          {Data.map(x => <li>{x.name}</li>)}
         </ul>
       </div>
     );

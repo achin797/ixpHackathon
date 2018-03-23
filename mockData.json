@@ -1,4 +1,4 @@
-var Data = [
+[
   {
     "name": "Washington Mccormick",
     "team": "FPA-609",
@@ -645,5 +645,3 @@ var Data = [
     }
   }
 ]
-
-    module.exports = Data;
