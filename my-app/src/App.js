@@ -33,6 +33,9 @@ class App extends Component {
         <ul>
           {filteredData.map(x => <li>{x.name}</li>)}
         </ul>
+
+
+
         <PopupItem title="Some Information" info={data[0].moreInfo} />
 
 
@@ -70,11 +73,12 @@ function PopupItem(props) {
 }
 
 function recursiveJSONSearch(fields,userInfo,items){
-  console.log("ITEMS"+JSON.stringify(items));
+  //console.log("ITEMS"+JSON.stringify(items));
   for(var key in items){
-    console.log(key);
+    console.log(key + " - " + typeof key);
+    console.log(items[key] + " - " + typeof items[key]);
     fields += key+'\n';
-    if (typeof items[key] != 'string' && isNaN(items[key])){
+    if (typeof items[key] === 'object'){
       userInfo += '-\n';
       var searchResults = recursiveJSONSearch(fields,userInfo,items[key]);
       fields = searchResults[0];
