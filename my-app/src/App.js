@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Data from './people.js';
+import SearchBar from './components/SearchBar.js'
 import './App.css';
 import data from './mock.json'
 //var data = require('json!./mock.json');
@@ -19,6 +21,12 @@ class App extends Component {
         </p>
         <PopupItem title="Some Information" info={data.moreInfo.Location} />
 
+
+        <SearchBar/>
+
+        <ul>
+          {Data.map(x => <li>{x.name}</li>)}
+        </ul>
       </div>
     );
   }
