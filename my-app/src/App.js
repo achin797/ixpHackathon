@@ -30,7 +30,9 @@ class App extends Component {
         </p>
 
         <SearchInput className="search-input" onChange={this.searchUpdated} />
-        {filteredData.map(x => <li>{x.name}</li>)}
+        <ul>
+          {filteredData.map(x => <li>{x.name}</li>)}
+        </ul>
         <PopupItem title="Some Information" info={data[0].moreInfo.location} />
 
 
